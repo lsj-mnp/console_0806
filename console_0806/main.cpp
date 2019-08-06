@@ -2,7 +2,7 @@
 
 int main()
 {
-	console_helper a{ console_helper(40, 20, 0, 0) };
+	console_helper a{ console_helper(40, 20, 5, 5) };
 
 	a.SetCursorVisibility(false);
 
@@ -63,11 +63,11 @@ int main()
 		a.PrintBorderHorizontal('-', ch_x);
 		a.PrintBorderVertical('|', ch_y);
 
-		a.SetCursorPosition(43, 1);
+		a.SetCursorPosition(47, 1);
 
 		std::cout << "X: " << ch_x << " ";
 
-		a.SetCursorPosition(43, 2);
+		a.SetCursorPosition(47, 2);
 
 		std::cout << "Y: " << ch_y << " ";
 	}
